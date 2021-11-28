@@ -1,1 +1,63 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#>.
+@prefix mo: <http://purl.org/ontology/mo#>.
+@prefix onto: <https://github.com/AMMARIsalma/THYP_21-22/tree/main/onto#> .
+
+<https://github.com/AMMARIsalma/THYP_21-22/tree/main/onto#> a owl:Ontology ;
+    dcterms:title "Jardin des connaissances" .
+
+onto:Produit a rdfs:Class ;
+    rdfs:label "Produit" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+onto:Achat a rdfs:Class ;
+    rdfs:label "Achat" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+onto:Model a rdf:Property ;
+    rdfs:label "Model" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+onto:Categorie a rdf:Property ;
+    rdfs:label "Categorie" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+onto:Taille a rdf:Property ;
+    rdfs:label "Taille" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+onto:Prix a rdf:Property ;
+    rdfs:label "Prix" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+onto:Name a rdf:Property ;
+    rdfs:label "Name" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+onto:DateAchat rdf:Property ;
+    rdfs:label "DateAchat" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+onto:facture rdf:Property ;
+    rdfs:label "facture" ;
+    rdfs:domain o:Resource .
+
+onto:Modepayement rdf:Property ;
+    rdfs:label "Modepayement" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
 
